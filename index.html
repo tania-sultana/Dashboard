@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CePron</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha284-EVSTQN2/azprG1Anm2QDgpJLIm10Nao0Yz1ztcQTwFspd2yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..1000;1,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+      integrity="…"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+            <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+    </head>
+    <body>
+        <div class="wrapper d-flex">
+            <div class="sidebar bg-light d-flex flex-column p-3  align-item-center justify-content-between">
+                    <div>
+                        <div class="my-4 d-flex flex-direction-row">
+                            <img  src="images/logo.svg" alt="logo">
+                            <span class="px-2 py-1 mt-3 ms-2 text-center bg-white shadow shop">Shop</span>
+                        </div>
+                        
+                        <div class="d-flex flex-column gap-2 ">
+                        
+                            <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                                <img src="images/dashboard.svg" alt="dash" class="me-2" />
+                                <a href="#" class="list-link side-list text-decoration-none">Dashboard</a>
+                            </div>
+                        
+                            <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                                <img src="images/enrollment.svg" alt="enroll" class="me-2" />
+                                <a href="#" class="list-link side-list text-decoration-none">Enrollment</a>
+                            </div>
+                                                
+                            <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                                <img src="images/student.svg" alt="student" class="me-2" />
+                                <a href="#" class="list-link side-list text-decoration-none">Students</a>
+                            </div>
+                        
+                            <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                                <img src="images/course.svg" alt="course" class="me-2" />
+                                <a href="#" class="list-link side-list text-decoration-none">Courses</a>
+                            </div>
+                                                
+                            <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                                <img src="images/balance.svg" alt="balance" class="me-2" />
+                                <a href="#" class="list-link side-list text-decoration-none">Balance</a>
+                            </div>
+                        
+                            <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                                <img src="images/enrollment.svg" alt="profile" class="me-2" />
+                                <a href="#" class="list-link side-list text-decoration-none">Profile</a>
+                            </div>
+                        </div>                                         
+                    </div>
+                    <div class="">
+                        <div class="card  bg-light mb-4 profile position-relative ">
+                            <div class="card-body ">
+                                <img class="avator" src="images/avator.png" alt="avater">
+                                <h6 class="card-title fw-bold">Luna Maria</h6>
+                                <p class="card-text sub-text text-secondary">example@gmail.com</p>
+                            </div>
+                            <div class="position-absolute top-0 end-0 mt-4 me-3 arrow">
+                                <i class="fa-solid fa-arrow-right "></i>
+                            </div>
+                        </div>
+                        <div class="border-top">
+                            <p class="pt-3 sub-text "><span class="text-secondary">Powered by:</span> CSN Limited</p>
+                        </div>
+                    </div>
+            </div>
+            <div class="main_content flex-grow-1">
+                <nav class="sticky-top w-100">
+                    <div class="d-flex flex-row  justify-content-between p-3">
+                        <div class="d-flex flex-column mt-3">
+                            <p class="text-secondary mb-1">Hello</p>
+                            <div class="d-flex flex-row align-items-center ">
+                                <h4 class="fw-bold me-2">Luna Maria</h4>
+                                <img src="images/hello.svg" alt="hlw">
+                            </div>
+                        </div>
+                        <div class="m-3 nav-right">
+                            <div class="d-flex flex-row align-items-center mx-3 my-1">
+                                <img src="images/new_admission.svg" alt="addmission">
+                                <p class="my-2">New Admission</p>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="body pt-4">
+                    <div class="mx-5">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                <div class="card card-1 border-0 ">
+                                    <div class="card-body ">
+                                        <img class="p-3 bg-light rounded-circle mb-3" src="images/earning.svg" alt="course-logo">
+                                        <h5 class="para text-secondary">Today’s Earning</h5>
+                                        <h4 class="fw-bold me-2">€765.5</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                <div class="card card-2 border-0">
+                                    <div class="card-body  rounded-3">
+                                        <img class="p-3 bg-light rounded-circle mb-3" src="images/total-students.svg" alt="course-logo">
+                                        <h5 class="para text-secondary">Total Students</h5>
+                                        <h4 class="fw-bold me-2">109</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                <div class="card card-3">
+                                    <div class="card-body rounded-3">
+                                        <img class="p-3 bg-light rounded-circle mb-3" src="images/total-courses.svg" alt="course-logo">
+                                        <h5 class="para text-secondary">Total Courses</h5>
+                                        <h4 class="fw-bold me-2">24</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                                <div class="card card-4">
+                                    <div class="card-body rounded-3">
+                                        <img class="p-3 bg-light rounded-circle mb-3" src="images/sold-course.svg" alt="course-logo">
+                                        <h5 class="para text-secondary">Courses Sold</h5>
+                                        <h4 class="fw-bold me-2">2,616</h4>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 col-sm-12 ">
+                            <div class="ms-5 mt-4 border-end ">
+                                <div class="pe-4 ">
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <h5 class="fw-bold stat">Statistics</h5>
+                                        <select name="dropdown" id="year" class="px-2 text-secondary drop">
+                                            <option value="this-month" >This Month</option>
+                                            <option value="this-year"  selected >This Year</option>
+                                        </select>
+                                    </div>
+                                    <div class="border my-4 rounded">
+                                        <div id="chart" class="p-3">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="pe-4">
+                                    <div class="p-3 bg-light">                             
+                                        <p>Top 10 Courses</p>   
+                                        <table class="w-100">
+                                            <thead>
+                                                <tr>
+                                                    <th>Rank</th>
+                                                    <th>Course Title</th>
+                                                    <th>Sold</th>
+                                                    <th>Amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>                                     
+                                                <tr>
+                                                    <td><span class="rank rank-1">1</span></td>
+                                                    <td>Advance UI UX Design Course</td>
+                                                    <td>124</td>
+                                                    <td>€340.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="rank rank-2">2</span></td>
+                                                    <td>Advance UI UX Design Course</td>
+                                                    <td>124</td>
+                                                    <td>€340.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="rank rank-3">3</span></td>
+                                                    <td>Advance UI UX Design Course</td>
+                                                    <td>124</td>
+                                                    <td>€340.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="rank default">4</span></td>
+                                                    <td>Advance UI UX Design Course</td>
+                                                    <td>124</td>
+                                                    <td>€340.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="rank default">5</span></td>
+                                                    <td>Advance UI UX Design Course</td>
+                                                    <td>124</td>
+                                                    <td>€340.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="rank default">6</span></td>
+                                                    <td>Advance UI UX Design Course</td>
+                                                    <td>124</td>
+                                                    <td>€340.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="rank default">7</span></td>
+                                                    <td>Advance UI UX Design Course</td>
+                                                    <td>124</td>
+                                                    <td>€340.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="rank default">8</span></td>
+                                                    <td>Advance UI UX Design Course</td>
+                                                    <td>124</td>
+                                                    <td>€340.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="rank default">9</span></td>
+                                                    <td>Advance UI UX Design Course</td>
+                                                    <td>124</td>
+                                                    <td>€340.0</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><span class="rank default">10</span></td>
+                                                    <td>Advance UI UX Design Course</td>
+                                                    <td>124</td>
+                                                    <td>€340.0</td>
+                                                </tr>
+                                            </tbody>
+  </table>                           
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="me-5 mt-4">
+                                <div class="row ">
+                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                        <div class="card">
+                                    <div class="card-body">
+                                        <div class="row ">
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <div class="img">
+                                                    <img class="" src="images/course-thumbnail.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class=" col-lg-8 col-md-8 col-sm-8">
+                                               
+                                                         <div class="ms-lg-5 ms-md-4 ">
+                                                    <p class="my-1">Advance UI UX Design Course</p>
+                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="">
+                                                            <img class="" src="images/clock.svg" alt="clock">
+                                                            <span class="text-secondary">12h</span>
+                                                            <span class="text-secondary">20m</span>
+                                                        </div>
+                                                        <div>
+                                                            <img class="" src="images/video.svg" alt="clock">
+                                                            <span class="text-secondary">8</span>
+                                                            <span class="text-secondary">Video</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                    
+                                        </div>
+                                    </div>
+                                </div>                                 
+                                </div>
+                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                        <div class="card">
+                                    <div class="card-body">
+                                        <div class="row ">
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <div class="img">
+                                                    <img class="" src="images/course-thumbnail.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class=" col-lg-8 col-md-8 col-sm-8">
+                                               
+                                                         <div class="ms-lg-5 ms-md-4 ">
+                                                    <p class="my-1">Advance UI UX Design Course</p>
+                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="">
+                                                            <img class="" src="images/clock.svg" alt="clock">
+                                                            <span class="text-secondary">12h</span>
+                                                            <span class="text-secondary">20m</span>
+                                                        </div>
+                                                        <div>
+                                                            <img class="" src="images/video.svg" alt="clock">
+                                                            <span class="text-secondary">8</span>
+                                                            <span class="text-secondary">Video</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                    
+                                        </div>
+                                    </div>
+                                </div>                                 
+                                </div>
+                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                        <div class="card">
+                                    <div class="card-body">
+                                        <div class="row ">
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <div class="img">
+                                                    <img class="" src="images/course-thumbnail.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class=" col-lg-8 col-md-8 col-sm-8">
+                                               
+                                                         <div class="ms-lg-5 ms-md-4 ">
+                                                    <p class="my-1">Advance UI UX Design Course</p>
+                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="">
+                                                            <img class="" src="images/clock.svg" alt="clock">
+                                                            <span class="text-secondary">12h</span>
+                                                            <span class="text-secondary">20m</span>
+                                                        </div>
+                                                        <div>
+                                                            <img class="" src="images/video.svg" alt="clock">
+                                                            <span class="text-secondary">8</span>
+                                                            <span class="text-secondary">Video</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                    
+                                        </div>
+                                    </div>
+                                </div>                                 
+                                </div>
+                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                        <div class="card">
+                                    <div class="card-body">
+                                        <div class="row ">
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <div class="img">
+                                                    <img class="" src="images/course-thumbnail.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class=" col-lg-8 col-md-8 col-sm-8">
+                                               
+                                                         <div class="ms-lg-5 ms-md-4 ">
+                                                    <p class="my-1">Advance UI UX Design Course</p>
+                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="">
+                                                            <img class="" src="images/clock.svg" alt="clock">
+                                                            <span class="text-secondary">12h</span>
+                                                            <span class="text-secondary">20m</span>
+                                                        </div>
+                                                        <div>
+                                                            <img class="" src="images/video.svg" alt="clock">
+                                                            <span class="text-secondary">8</span>
+                                                            <span class="text-secondary">Video</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                    
+                                        </div>
+                                    </div>
+                                </div>                                 
+                                </div>
+                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                        <div class="card">
+                                    <div class="card-body">
+                                        <div class="row ">
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <div class="img">
+                                                    <img class="" src="images/course-thumbnail.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class=" col-lg-8 col-md-8 col-sm-8">
+                                               
+                                                         <div class="ms-lg-5 ms-md-4 ">
+                                                    <p class="my-1">Advance UI UX Design Course</p>
+                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="">
+                                                            <img class="" src="images/clock.svg" alt="clock">
+                                                            <span class="text-secondary">12h</span>
+                                                            <span class="text-secondary">20m</span>
+                                                        </div>
+                                                        <div>
+                                                            <img class="" src="images/video.svg" alt="clock">
+                                                            <span class="text-secondary">8</span>
+                                                            <span class="text-secondary">Video</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                    
+                                        </div>
+                                    </div>
+                                </div>                                 
+                                </div>
+                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                        <div class="card">
+                                    <div class="card-body">
+                                        <div class="row ">
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <div class="img">
+                                                    <img class="" src="images/course-thumbnail.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class=" col-lg-8 col-md-8 col-sm-8">
+                                               
+                                                         <div class="ms-lg-5 ms-md-4 ">
+                                                    <p class="my-1">Advance UI UX Design Course</p>
+                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="">
+                                                            <img class="" src="images/clock.svg" alt="clock">
+                                                            <span class="text-secondary">12h</span>
+                                                            <span class="text-secondary">20m</span>
+                                                        </div>
+                                                        <div>
+                                                            <img class="" src="images/video.svg" alt="clock">
+                                                            <span class="text-secondary">8</span>
+                                                            <span class="text-secondary">Video</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                    
+                                        </div>
+                                    </div>
+                                </div>                                 
+                                </div>
+
+
+            
+
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+        <script src="index.js"></script>
+    </body>
+</html>

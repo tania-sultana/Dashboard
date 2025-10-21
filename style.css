@@ -10,10 +10,8 @@
     line-height: 20px;
     font-weight: 400;
 }
-
 /* -------------sidebar------------ */
 .sidebar{
-    /* max-width: 380px; */
     min-width: 280px;
     height: 100vh;
      position: sticky;
@@ -21,7 +19,7 @@
     left: 0;
     z-index: 1000;
     overflow: hidden;
-        transition: transform 0.3s ease;
+      transition: transform 0.3s ease;
     
 }
 
@@ -36,7 +34,6 @@
     background-color: #E2E8F0 !important;
     color: #1E293B !important;
     border-radius: 10px;
-   
 }
 .profile{
     border: none;
@@ -50,7 +47,6 @@
     display: none;
 }
 .profile:hover{
-    /* border: 1px solid #e9ecef; */
     border-radius: 10px;
 }
 .profile:hover .arrow{
@@ -60,12 +56,6 @@
 .side.active{
     background-color: #2DD4BF !important; 
     border-radius: 10px;
-    
-   
-}
-
-.side.active  .side-list {
-    /* color: #ffffff !important; */
 }
 
 /* ----------------navbar----------------- */
@@ -190,8 +180,6 @@ nav {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
-  color: #333;
   border-radius: 10px;
 }
 
@@ -199,8 +187,6 @@ nav {
   width: 120px;
   height: 120px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #fff;
 }
 
 .camera-icon {

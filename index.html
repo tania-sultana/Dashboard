@@ -29,52 +29,54 @@
     </head>
     <body>
         <div class="wrapper d-flex">
-            <div class="sidebar bg-light d-flex flex-column p-3  align-item-center justify-content-between">
+            <!-- <button id="sidebarToggle" class="btn btn-light d-md-none "><i class="fa-solid fa-bars"></i></button> -->
+             
+            <div class="sidebar bg-light d-flex flex-column p-3  align-item-center justify-content-between" id="sidebar"> 
                     <div>
-                        <div class="my-4 d-flex flex-direction-row">
+                        <div class="my-4 d-flex flex-direction-row hide-side">
                             <img  src="images/logo.svg" alt="logo">
                             <span class="px-2 py-1 mt-3 ms-2 text-center bg-white shadow shop">Shop</span>
                         </div>
                         
                         <div class="d-flex flex-column gap-2 ">
                         
-                            <div class="bg-light p-2 border-0 d-flex align-items-center side">
-                                <img src="images/dashboard.svg" alt="dash" class="me-2" />
-                                <a href="#" class="list-link side-list text-decoration-none">Dashboard</a>
+                            <div class="bg-light p-2 border-0 d-flex align-items-center side active">
+                                <img class="eff" src="images/dashboard.svg" alt="dash" class="me-2" />
+                                <a href="#" class=" list-link side-list text-decoration-none hide-side">Dashboard</a>
                             </div>
                         
                             <div class="bg-light p-2 border-0 d-flex align-items-center side">
                                 <img src="images/enrollment.svg" alt="enroll" class="me-2" />
-                                <a href="#" class="list-link side-list text-decoration-none">Enrollment</a>
+                                <a href="#" class="list-link side-list text-decoration-none hide-side">Enrollment</a>
                             </div>
                                                 
                             <div class="bg-light p-2 border-0 d-flex align-items-center side">
                                 <img src="images/student.svg" alt="student" class="me-2" />
-                                <a href="#" class="list-link side-list text-decoration-none">Students</a>
+                                <a href="#" class="list-link side-list text-decoration-none hide-side">Students</a>
                             </div>
                         
                             <div class="bg-light p-2 border-0 d-flex align-items-center side">
                                 <img src="images/course.svg" alt="course" class="me-2" />
-                                <a href="#" class="list-link side-list text-decoration-none">Courses</a>
+                                <a href="#" class="list-link side-list text-decoration-none hide-side">Courses</a>
                             </div>
                                                 
                             <div class="bg-light p-2 border-0 d-flex align-items-center side">
                                 <img src="images/balance.svg" alt="balance" class="me-2" />
-                                <a href="#" class="list-link side-list text-decoration-none">Balance</a>
+                                <a href="#" class="list-link side-list text-decoration-none hide-side">Balance</a>
                             </div>
                         
                             <div class="bg-light p-2 border-0 d-flex align-items-center side">
                                 <img src="images/enrollment.svg" alt="profile" class="me-2" />
-                                <a href="#" class="list-link side-list text-decoration-none">Profile</a>
+                                <a href="#" class="list-link side-list text-decoration-none hide-side">Profile</a>
                             </div>
                         </div>                                         
                     </div>
                     <div class="">
                         <div class="card  bg-light mb-4 profile position-relative ">
                             <div class="card-body ">
-                                <img class="avator" src="images/avator.png" alt="avater">
-                                <h6 class="card-title fw-bold">Luna Maria</h6>
-                                <p class="card-text sub-text text-secondary">example@gmail.com</p>
+                                <img class="avator hide-side" src="images/avator.png" alt="avater">
+                                <h6 class="card-title fw-bold hide-side">Luna Maria</h6>
+                                <p class="card-text sub-text text-secondary hide-side">example@gmail.com</p>
                             </div>
                             <div class="position-absolute top-0 end-0 mt-4 me-3 arrow">
                                 <i class="fa-solid fa-arrow-right "></i>
@@ -85,6 +87,11 @@
                         </div>
                     </div>
             </div>
+           
+            
+            
+            
+            
             <div class="main_content flex-grow-1">
                 <nav class="sticky-top w-100">
                     <div class="d-flex flex-row  justify-content-between p-3">
@@ -150,6 +157,7 @@
                     </div>
 
                     <div class="row">
+
                         <div class="col-lg-8 col-md-12 col-sm-12 ">
                             <div class="ms-5 mt-4 border-end ">
                                 <div class="pe-4 ">
@@ -246,210 +254,193 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-12 col-sm-12">
-                            <div class="me-5 mt-4">
+                        <div class="col-lg-4 col-md-12 col-sm-12 right">
+                            <div class="me-lg-5 mt-4 ms-md-5 ms-lg-0 me-md-4">
+                                <div class="d-flex justify-content-between">
+                                    <p>New Courses</p>
+                                    <p>View All</p>
+                                </div>
+
                                 <div class="row ">
-                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                    <div class="col-lg-12 col-md-6 col-sm-6 mb-2">
                                         <div class="card">
-                                    <div class="card-body">
-                                        <div class="row ">
-                                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                                <div class="img">
-                                                    <img class="" src="images/course-thumbnail.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class=" col-lg-8 col-md-8 col-sm-8">
-                                               
-                                                         <div class="ms-lg-5 ms-md-4 ">
-                                                    <p class="my-1">Advance UI UX Design Course</p>
-                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="">
-                                                            <img class="" src="images/clock.svg" alt="clock">
-                                                            <span class="text-secondary">12h</span>
-                                                            <span class="text-secondary">20m</span>
-                                                        </div>
-                                                        <div>
-                                                            <img class="" src="images/video.svg" alt="clock">
-                                                            <span class="text-secondary">8</span>
-                                                            <span class="text-secondary">Video</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                    </div>
-                                                    
+                                        <div class="card-body">
+
+                                        <div class="d-flex flex-xl-row flex-sm-row flex-md-column custom-card p-lg-1 p-md-1 p-sm-2">
+                                        <img src="images/course-thumbnail.svg" alt="thumbnail">
+                                        <div class="d-flex flex-column ms-1 align-items-md-center text-xl-start">
+                                        <p class="text-md-center text-xl-start">Advance UI UX Design Course</p>
+                                        <p class="text-secondary sub-text">Jhankar Mahbub</p>
+                                        <div>
+                                            <img src="images/clock.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                       
+                                        
+                                            <img src="images/video.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                            
                                         </div>
+                                        </div>
+                                    </div>
+
                                     </div>
                                 </div>                                 
                                 </div>
-                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                    <div class="col-lg-12 col-md-6 col-sm-6 mb-2">
                                         <div class="card">
-                                    <div class="card-body">
-                                        <div class="row ">
-                                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                                <div class="img">
-                                                    <img class="" src="images/course-thumbnail.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class=" col-lg-8 col-md-8 col-sm-8">
-                                               
-                                                         <div class="ms-lg-5 ms-md-4 ">
-                                                    <p class="my-1">Advance UI UX Design Course</p>
-                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="">
-                                                            <img class="" src="images/clock.svg" alt="clock">
-                                                            <span class="text-secondary">12h</span>
-                                                            <span class="text-secondary">20m</span>
-                                                        </div>
-                                                        <div>
-                                                            <img class="" src="images/video.svg" alt="clock">
-                                                            <span class="text-secondary">8</span>
-                                                            <span class="text-secondary">Video</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                    </div>
-                                                    
+                                        <div class="card-body">
+
+                                        <div class="d-flex flex-xl-row flex-sm-row flex-md-column custom-card p-lg-1 p-md-1 p-sm-2">
+                                        <img src="images/course-thumbnail.svg" alt="thumbnail">
+                                        <div class="d-flex flex-column ms-1 align-items-md-center text-xl-start">
+                                        <p class="text-md-center text-xl-start">Advance UI UX Design Course</p>
+                                        <p class="text-secondary sub-text">Jhankar Mahbub</p>
+                                        <div>
+                                            <img src="images/clock.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                       
+                                        
+                                            <img src="images/video.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                            
                                         </div>
+                                        </div>
+                                    </div>
+
                                     </div>
                                 </div>                                 
                                 </div>
-                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                    <div class="col-lg-12 col-md-6 col-sm-6 mb-2">
                                         <div class="card">
-                                    <div class="card-body">
-                                        <div class="row ">
-                                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                                <div class="img">
-                                                    <img class="" src="images/course-thumbnail.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class=" col-lg-8 col-md-8 col-sm-8">
-                                               
-                                                         <div class="ms-lg-5 ms-md-4 ">
-                                                    <p class="my-1">Advance UI UX Design Course</p>
-                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="">
-                                                            <img class="" src="images/clock.svg" alt="clock">
-                                                            <span class="text-secondary">12h</span>
-                                                            <span class="text-secondary">20m</span>
-                                                        </div>
-                                                        <div>
-                                                            <img class="" src="images/video.svg" alt="clock">
-                                                            <span class="text-secondary">8</span>
-                                                            <span class="text-secondary">Video</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                    </div>
-                                                    
+                                        <div class="card-body">
+
+                                        <div class="d-flex flex-xl-row flex-sm-row flex-md-column custom-card p-lg-1 p-md-1 p-sm-2">
+                                        <img src="images/course-thumbnail.svg" alt="thumbnail">
+                                        <div class="d-flex flex-column ms-1 align-items-md-center text-xl-start">
+                                        <p class="text-md-center text-xl-start">Advance UI UX Design Course</p>
+                                        <p class="text-secondary sub-text">Jhankar Mahbub</p>
+                                        <div>
+                                            <img src="images/clock.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                       
+                                        
+                                            <img src="images/video.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                            
                                         </div>
+                                        </div>
+                                    </div>
+
                                     </div>
                                 </div>                                 
                                 </div>
-                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                    <div class="col-lg-12 col-md-6 col-sm-6 mb-2">
                                         <div class="card">
-                                    <div class="card-body">
-                                        <div class="row ">
-                                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                                <div class="img">
-                                                    <img class="" src="images/course-thumbnail.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class=" col-lg-8 col-md-8 col-sm-8">
-                                               
-                                                         <div class="ms-lg-5 ms-md-4 ">
-                                                    <p class="my-1">Advance UI UX Design Course</p>
-                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="">
-                                                            <img class="" src="images/clock.svg" alt="clock">
-                                                            <span class="text-secondary">12h</span>
-                                                            <span class="text-secondary">20m</span>
-                                                        </div>
-                                                        <div>
-                                                            <img class="" src="images/video.svg" alt="clock">
-                                                            <span class="text-secondary">8</span>
-                                                            <span class="text-secondary">Video</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                    </div>
-                                                    
+                                        <div class="card-body">
+
+                                        <div class="d-flex flex-xl-row flex-sm-row flex-md-column custom-card p-lg-1 p-md-1 p-sm-2">
+                                        <img src="images/course-thumbnail.svg" alt="thumbnail">
+                                        <div class="d-flex flex-column ms-1 align-items-md-center text-xl-start">
+                                        <p class="text-md-center text-xl-start">Advance UI UX Design Course</p>
+                                        <p class="text-secondary sub-text">Jhankar Mahbub</p>
+                                        <div>
+                                            <img src="images/clock.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                       
+                                        
+                                            <img src="images/video.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                            
                                         </div>
+                                        </div>
+                                    </div>
+
                                     </div>
                                 </div>                                 
                                 </div>
-                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                    <div class="col-lg-12 col-md-6 col-sm-6 mb-2">
                                         <div class="card">
-                                    <div class="card-body">
-                                        <div class="row ">
-                                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                                <div class="img">
-                                                    <img class="" src="images/course-thumbnail.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class=" col-lg-8 col-md-8 col-sm-8">
-                                               
-                                                         <div class="ms-lg-5 ms-md-4 ">
-                                                    <p class="my-1">Advance UI UX Design Course</p>
-                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="">
-                                                            <img class="" src="images/clock.svg" alt="clock">
-                                                            <span class="text-secondary">12h</span>
-                                                            <span class="text-secondary">20m</span>
-                                                        </div>
-                                                        <div>
-                                                            <img class="" src="images/video.svg" alt="clock">
-                                                            <span class="text-secondary">8</span>
-                                                            <span class="text-secondary">Video</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                    </div>
-                                                    
+                                        <div class="card-body">
+
+                                        <div class="d-flex flex-xl-row flex-sm-row flex-md-column custom-card p-lg-1 p-md-1 p-sm-2">
+                                        <img src="images/course-thumbnail.svg" alt="thumbnail">
+                                        <div class="d-flex flex-column ms-1 align-items-md-center text-xl-start">
+                                        <p class="text-md-center text-xl-start">Advance UI UX Design Course</p>
+                                        <p class="text-secondary sub-text">Jhankar Mahbub</p>
+                                        <div>
+                                            <img src="images/clock.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                       
+                                        
+                                            <img src="images/video.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                            
                                         </div>
+                                        </div>
+                                    </div>
+
                                     </div>
                                 </div>                                 
                                 </div>
-                                    <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                    <div class="col-lg-12 col-md-6 col-sm-6 mb-2">
                                         <div class="card">
-                                    <div class="card-body">
-                                        <div class="row ">
-                                            <div class="col-lg-4 col-md-4 col-sm-4">
-                                                <div class="img">
-                                                    <img class="" src="images/course-thumbnail.svg" alt="">
-                                                </div>
-                                            </div>
-                                            <div class=" col-lg-8 col-md-8 col-sm-8">
-                                               
-                                                         <div class="ms-lg-5 ms-md-4 ">
-                                                    <p class="my-1">Advance UI UX Design Course</p>
-                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
-                                                    <div class="d-flex justify-content-between">
-                                                        <div class="">
-                                                            <img class="" src="images/clock.svg" alt="clock">
-                                                            <span class="text-secondary">12h</span>
-                                                            <span class="text-secondary">20m</span>
-                                                        </div>
-                                                        <div>
-                                                            <img class="" src="images/video.svg" alt="clock">
-                                                            <span class="text-secondary">8</span>
-                                                            <span class="text-secondary">Video</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                    </div>
-                                                    
+                                        <div class="card-body">
+
+                                        <div class="d-flex flex-xl-row flex-sm-row flex-md-column custom-card p-lg-1 p-md-1 p-sm-2">
+                                        <img src="images/course-thumbnail.svg" alt="thumbnail">
+                                        <div class="d-flex flex-column ms-1 align-items-md-center text-xl-start">
+                                        <p class="text-md-center text-xl-start">Advance UI UX Design Course</p>
+                                        <p class="text-secondary sub-text">Jhankar Mahbub</p>
+                                        <div>
+                                            <img src="images/clock.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                       
+                                        
+                                            <img src="images/video.svg" alt="clock">
+                                            <span class="text-secondary sub-text">12h 20m</span>
+                                            
                                         </div>
+                                        </div>
+                                    </div>
+
                                     </div>
                                 </div>                                 
                                 </div>
 
-
-            
+                                   
+                                    <!-- <div class="col-lg-12 col-md-6 col-sm-12 mb-2">
+                                        <div class="card">
+                                    <div class="card-body">
+                                        <div class="row ">
+                                            <div class="col-lg-4 col-md-4 col-sm-4">
+                                                <div class="img">
+                                                    <img class="" src="images/course-thumbnail.svg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class=" col-lg-8 col-md-8 col-sm-8">
+                                               
+                                                         <div class="ms-lg-5 ms-md-4 ">
+                                                    <p class="my-1">Advance UI UX Design Course</p>
+                                                    <p class="text-secondary my-1">Jhankar Mahbub</p>
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="">
+                                                            <img class="" src="images/clock.svg" alt="clock">
+                                                            <span class="text-secondary">12h</span>
+                                                            <span class="text-secondary">20m</span>
+                                                        </div>
+                                                        <div>
+                                                            <img class="" src="images/video.svg" alt="clock">
+                                                            <span class="text-secondary">8</span>
+                                                            <span class="text-secondary">Video</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    </div>
+                                                    
+                                        </div>
+                                    </div>
+                                </div>                                 
+                                </div> -->
 
                             </div>
                             
@@ -459,8 +450,10 @@
                 </div>
             </div>
         </div>
+        
         <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
         <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
         <script src="index.js"></script>
+       
     </body>
 </html>

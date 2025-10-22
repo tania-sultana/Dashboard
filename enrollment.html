@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CePron</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha284-EVSTQN2/azprG1Anm2QDgpJLIm10Nao0Yz1ztcQTwFspd2yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..1000;1,100..1000&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+        integrity="…" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+</head>
+
+<body>
+    <div class="wrapper d-flex">
+        <div class="sidebar bg-light d-flex flex-column p-3  align-item-center justify-content-between " id="sidebar">
+            <div>
+                <div class="my-4 d-flex flex-direction-row hide-side">
+                    <img src="images/logo.svg" alt="logo">
+                    <span class="px-2 py-1 mt-3 ms-2 text-center bg-white shadow shop">Shop</span>
+                </div>
+
+                <div class="d-flex flex-column gap-2 ">
+
+                    <div class="bg-light p-2 border-0 d-flex align-items-center side active">
+                        <img class="eff" src="images/dashboard.svg" alt="dash" class="me-2" />
+                        <a href="index.html" class=" list-link side-list text-decoration-none hide-side">Dashboard</a>
+                    </div>
+
+                    <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                        <img src="images/enrollment.svg" alt="enroll" class="me-2" />
+                        <a href="#" class="list-link side-list text-decoration-none hide-side">Enrollment</a>
+                    </div>
+
+                    <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                        <img src="images/student.svg" alt="student" class="me-2" />
+                        <a href="students.html" class="list-link side-list text-decoration-none hide-side">Students</a>
+                    </div>
+
+                    <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                        <img src="images/course.svg" alt="course" class="me-2" />
+                        <a href="#" class="list-link side-list text-decoration-none hide-side">Courses</a>
+                    </div>
+
+                    <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                        <img src="images/balance.svg" alt="balance" class="me-2" />
+                        <a href="#" class="list-link side-list text-decoration-none hide-side">Balance</a>
+                    </div>
+
+                    <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                        <img src="images/enrollment.svg" alt="profile" class="me-2" />
+                        <a href="profile.html" class="list-link side-list text-decoration-none hide-side">Profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="">
+                <div class="card  bg-light mb-4 profile position-relative ">
+                    <div class="card-body ">
+                        <img class="avator hide-side" src="images/avator.png" alt="avater">
+                        <h6 class="card-title fw-bold hide-side">Luna Maria</h6>
+                        <p class="card-text sub-text text-secondary hide-side">example@gmail.com</p>
+                    </div>
+                    <div class="position-absolute top-0 end-0 mt-4 me-3 arrow">
+                        <i class="fa-solid fa-arrow-right "></i>
+                    </div>
+                </div>
+                <div class="border-top">
+                    <p class="pt-3 sub-text "><span class="text-secondary">Powered by:</span> CSN Limited</p>
+                </div>
+            </div>
+        </div>
+        <div class="main_content flex-grow-1">
+            <nav class="sticky-top w-100">
+                <div class="d-flex flex-row  justify-content-between p-3">
+                    <div class="d-flex align-item-center p-3 text-center gap-1">
+                        <i class="fa-solid fa-house text-secondary mt-3"></i>
+                        <i class="fa-solid fa-angle-right text-secondary mt-3"></i>
+                        <p class="mt-2 fs-5">Enrollment</p>
+                    </div>
+                    <div class="m-3 nav-right">
+                        <div class="d-flex flex-row align-items-center mx-3 my-1">
+                            <img src="images/new_admission.svg" alt="addmission">
+                            <p class="my-2">New Admission</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="body mt-4 border-top">
+                <div class="mx-5  mt-4">
+                    <div class="top-section d-flex flex-wrap align-items-center justify-content-between gap-3">
+                       <div class="d-flex flex-grow-1 gap-3 ">
+                            <div class="search-container position-relative  input hvr">
+                                <input type="text" class="p-3 input" placeholder="Search Student" />
+                                <span class="icon position-absolute"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            </div>
+
+                            <div class="filter-btn p-3 fltr-icon text-center hvr">
+                                <span class="icon "><i class="fa-solid fa-filter"></i></span> Filter
+                            </div>
+                       </div>
+
+                        <div class="flex-grow-1 hvr">
+                            <select class="sort-dropdown p-3 ">
+                                <option selected>Sort by</option>
+                                <option>Pending</option>
+                                <option>Confirmed</option>
+                                <option>Cancelled</option>
+
+                            </select>
+                        </div>
+
+                       <div class="flex-grow-1 hvr">
+                         <input type="date" class="date-picker p-3 text-secondary date" />
+                       </div>
+
+                        <div class="export-btn  text-center p-3 hvr">
+                            Export to <i class="fa-solid fa-angle-down"></i>
+                        </div>
+                    </div>
+                    <div class="enrollment-table mt-4 table-responsive-md">
+                         <table class="w-100">
+                                        <thead>
+                                           <tr>
+                                                <th>Date</th>
+                                                <th>Student	</th>
+                                                <th>Course</th>
+                                                <th>Status</th>
+                                                <th></th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody >
+                                            <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-confirmed p-1 rounded-3 text-white">Confirmed</span></td>
+                                                <td></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-confirmed p-1 rounded-3 text-white">Confirmed</span></td>
+                                                <td></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-primary p-1 rounded-3 text-white">Pending</span></td>
+                                                <td class="width-pay"><span class="pay-btn text-white px-2 py-1 rounded-3  text-center">Pay Now</span></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-primary p-1 rounded-3 text-white">Pending</span></td>
+                                                <td class="width-pay"><span class="pay-btn text-white px-2 py-1 rounded-3  text-center">Pay Now</span></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-confirmed p-1 rounded-3 text-white">Confirmed</span></td>
+                                                <td></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-danger p-1 rounded-3 text-white">Cancelled</span></td>
+                                               <td class="width-pay"><span class="pay-btn text-white px-2 py-1 rounded-3  text-center">Pay Now</span></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-confirmed p-1 rounded-3 text-white">Confirmed</span></td>
+                                                <td></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-danger p-1 rounded-3 text-white">Cancelled</span></td>
+                                                <td></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-primary p-1 rounded-3 text-white">Pending</span></td>
+                                                <td class="width-pay"><span class="pay-btn text-white px-2 py-1 rounded-3  text-center">Pay Now</span></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-danger p-1 rounded-3 text-white">Cancelled</span></td>
+                                                <td></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-confirmed p-1 rounded-3 text-white">Confirmed</span></td>
+                                                <td></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-danger p-1 rounded-3 text-white">Cancelled</span></td>
+                                                <td class="width-pay"><span class="pay-btn text-white px-2 py-1 rounded-3  text-center">Pay Now</span></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-confirmed p-1 rounded-3 text-white">Confirmed</span></td>
+                                                <td></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-danger p-1 rounded-3 text-white">Cancelled</span></td>
+                                                <td></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                            <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-primary p-1 rounded-3 text-white">Pending</span></td>
+                                                <td class="width-pay"><span class="pay-btn text-white px-2 py-1 rounded-3  text-center">Pay Now</span></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           <tr class="border-bottom ">
+                                                <td>12 Jul, 2023</td>
+                                                <td>Mohammad Mahfuz</td>
+                                                <td>Professional Web Development</td>
+                                                <td><span class="rank-1st bg-danger p-1 rounded-3 text-white">Cancelled</span></td>
+                                                <td></td>
+                                                
+                                                <td><i class="fa-solid fa-ellipsis"></i></td>
+                                            </tr>
+                                           
+                                           
+                                        </tbody>
+                                    </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> -->
+        <script src="index.js"></script>
+
+</body>
+
+</html>

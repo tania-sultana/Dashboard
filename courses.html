@@ -24,44 +24,61 @@
 <body>
     <div class="wrapper d-flex">
         <div class="sidebar bg-light d-flex flex-column p-3  align-item-center justify-content-between " id="sidebar">
+            <button id="sidebarToggle" class="btn btn-light "><i class="fa-solid fa-bars"></i></button>
             <div>
                 <div class="my-4 d-flex flex-direction-row hide-side">
-                    <img src="images/logo.svg" alt="logo">
+                    <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
                     <span class="px-2 py-1 mt-3 ms-2 text-center bg-white shadow shop">Shop</span>
                 </div>
 
-                <div class="d-flex flex-column gap-2 ">
+                <div class="d-flex flex-column gap-2">
 
-                    <div class="bg-light p-2 border-0 d-flex align-items-center side active">
-                        <img class="eff" src="images/dashboard.svg" alt="dash" class="me-2" />
-                        <a href="index.html" class=" list-link side-list text-decoration-none hide-side">Dashboard</a>
-                    </div>
+                    <a href="index.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side ">
+                            <img class="eff me-2" src="images/dashboard.svg" alt="dash" />
+                            <span class="list-link side-list hide-side">Dashboard</span>
+                        </div>
+                    </a>
 
-                    <div class="bg-light p-2 border-0 d-flex align-items-center side">
-                        <img src="images/enrollment.svg" alt="enroll" class="me-2" />
-                        <a href="enrollment.html"
-                            class="list-link side-list text-decoration-none hide-side">Enrollment</a>
-                    </div>
 
-                    <div class="bg-light p-2 border-0 d-flex align-items-center side">
-                        <img src="images/student.svg" alt="student" class="me-2" />
-                        <a href="students.html" class="list-link side-list text-decoration-none hide-side">Students</a>
-                    </div>
+                    <a href="enrollment.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                            <img src="images/enrollment.svg" alt="enroll" class="me-2" />
+                            <span class="list-link side-list hide-side">Enrollment</span>
+                        </div>
+                    </a>
 
-                    <div class="bg-light p-2 border-0 d-flex align-items-center side">
-                        <img src="images/course.svg" alt="course" class="me-2" />
-                        <a href="courses.html" class="list-link side-list text-decoration-none hide-side">Courses</a>
-                    </div>
 
-                    <div class="bg-light p-2 border-0 d-flex align-items-center side">
-                        <img src="images/balance.svg" alt="balance" class="me-2" />
-                        <a href="#" class="list-link side-list text-decoration-none hide-side">Balance</a>
-                    </div>
+                    <a href="students.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                            <img src="images/student.svg" alt="student" class="me-2" />
+                            <span class="list-link side-list hide-side">Students</span>
+                        </div>
+                    </a>
 
-                    <div class="bg-light p-2 border-0 d-flex align-items-center side">
-                        <img src="images/enrollment.svg" alt="profile" class="me-2" />
-                        <a href="profile.html" class="list-link side-list text-decoration-none hide-side">Profile</a>
-                    </div>
+
+                    <a href="courses.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side active">
+                            <img src="images/course.svg" alt="course" class="me-2" />
+                            <span class="list-link side-list hide-side">Courses</span>
+                        </div>
+                    </a>
+
+
+                    <a href="balance.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                            <img src="images/balance.svg" alt="balance" class="me-2" />
+                            <span class="list-link side-list hide-side">Balance</span>
+                        </div>
+                    </a>
+
+
+                    <a href="profile.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                            <img src="images/enrollment.svg" alt="profile" class="me-2" />
+                            <span class="list-link side-list hide-side">Profile</span>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="">
@@ -81,14 +98,14 @@
             </div>
         </div>
         <div class="main_content flex-grow-1">
-            <nav class="sticky-top w-100">
-                <div class="d-flex flex-row  justify-content-between p-3">
-                    <div class="d-flex align-item-center p-3 text-center gap-1">
+            <nav class="sticky-top w-100 border-tp">
+                <div class="d-flex flex-row align-items-center justify-content-between px-4 py-3 position-relative">
+                    <div class="d-flex align-item-center  text-center gap-1 left-nav2">
                         <i class="fa-solid fa-house text-secondary mt-3"></i>
                         <i class="fa-solid fa-angle-right text-secondary mt-3"></i>
                         <p class="mt-2 fs-5">Courses</p>
                     </div>
-                    <div class="m-3 nav-right">
+                    <div class="m-2 nav-right">
                         <div class="d-flex flex-row align-items-center mx-3 my-1">
                             <img src="images/new_admission.svg" alt="addmission">
                             <p class="my-2">New Admission</p>
@@ -97,24 +114,24 @@
                 </div>
             </nav>
 
-            <div class="body mt-4 border-top">
+            <div class="body mt-4 ">
                 <div class="mx-5  mt-4">
                     <div class="top-section d-flex  align-items-center justify-content-between gap-3">
-                            <div class="search-container position-relative flex-grow-1  input hvr">
-                                <input type="text" class="p-3 input bg-light" placeholder="Search Student" />
-                                <span class="icon position-absolute"><i class="fa-solid fa-magnifying-glass"></i></span>
-                            </div>
-                            
-                            <div class=" flex-grow-1 text-center all hvr">
-                                <select class="sort-dropdown p-3 ">
+                        <div class="search-container position-relative flex-grow-1  input hvr">
+                            <input type="text" class="p-3 input bg-light" placeholder="Search Student" />
+                            <span class="icon position-absolute"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+
+                        <div class=" flex-grow-1 text-center all hvr">
+                            <select class="sort-dropdown p-3 ">
                                 <option selected>All</option>
                             </select>
-                            </div>
-                        
+                        </div>
+
                     </div>
 
                     <div class="bg-light p-4 mt-4">
-                       
+
                         <div class="d-flex flex-wrap bg-white p-3 align-items-center gap-3 mb-3 effect">
                             <div class="div-1  flex-grow-1 card-bg rounded">
                                 <div class="d-flex flex-column gap-2 div-in-1 mx-3">
@@ -129,19 +146,19 @@
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Video Lesson</p>
-                                <p class="sub-text"><img class="me-2"  src="images/video.svg" alt="time">123 Video</p>
+                                <p class="sub-text"><img class="me-2" src="images/video.svg" alt="time">123 Video</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Enrolled Students</p>
-                                <p class="sub-text"><img class="me-2"  src="images/balance.svg" alt="time">20,200</p>
+                                <p class="sub-text"><img class="me-2" src="images/balance.svg" alt="time">20,200</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Course Fee</p>
-                                <p class="sub-text"><img class="me-2"  src="images/clock.svg" alt="time">20h 45m</p>
+                                <p class="sub-text"><img class="me-2" src="images/clock.svg" alt="time">20h 45m</p>
                             </div>
                             <div class="btn div-2 flex-grow-1 p-3  border-enroll enroll">
                                 Enroll<i class="fa-solid fa-arrow-right ms-2"></i>
-                            </div>  
+                            </div>
                         </div>
                         <div class="d-flex flex-wrap bg-white p-3 align-items-center gap-3 mb-3 effect">
                             <div class="div-1  flex-grow-1 card-bg rounded">
@@ -157,19 +174,19 @@
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Video Lesson</p>
-                                <p class="sub-text"><img class="me-2"  src="images/video.svg" alt="time">123 Video</p>
+                                <p class="sub-text"><img class="me-2" src="images/video.svg" alt="time">123 Video</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Enrolled Students</p>
-                                <p class="sub-text"><img class="me-2"  src="images/balance.svg" alt="time">20,200</p>
+                                <p class="sub-text"><img class="me-2" src="images/balance.svg" alt="time">20,200</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Course Fee</p>
-                                <p class="sub-text"><img class="me-2"  src="images/clock.svg" alt="time">20h 45m</p>
+                                <p class="sub-text"><img class="me-2" src="images/clock.svg" alt="time">20h 45m</p>
                             </div>
                             <div class="btn div-2 flex-grow-1 p-3  border-enroll enroll">
                                 Enroll<i class="fa-solid fa-arrow-right ms-2"></i>
-                            </div>  
+                            </div>
                         </div>
                         <div class="d-flex flex-wrap bg-white p-3 align-items-center gap-3 mb-3 effect">
                             <div class="div-1  flex-grow-1 card-bg rounded">
@@ -185,19 +202,19 @@
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Video Lesson</p>
-                                <p class="sub-text"><img class="me-2"  src="images/video.svg" alt="time">123 Video</p>
+                                <p class="sub-text"><img class="me-2" src="images/video.svg" alt="time">123 Video</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Enrolled Students</p>
-                                <p class="sub-text"><img class="me-2"  src="images/balance.svg" alt="time">20,200</p>
+                                <p class="sub-text"><img class="me-2" src="images/balance.svg" alt="time">20,200</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Course Fee</p>
-                                <p class="sub-text"><img class="me-2"  src="images/clock.svg" alt="time">20h 45m</p>
+                                <p class="sub-text"><img class="me-2" src="images/clock.svg" alt="time">20h 45m</p>
                             </div>
                             <div class="btn div-2 flex-grow-1 p-3  border-enroll enroll">
                                 Enroll<i class="fa-solid fa-arrow-right ms-2"></i>
-                            </div>  
+                            </div>
                         </div>
                         <div class="d-flex flex-wrap bg-white p-3 align-items-center gap-3 mb-3 effect">
                             <div class="div-1  flex-grow-1 card-bg rounded">
@@ -213,19 +230,19 @@
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Video Lesson</p>
-                                <p class="sub-text"><img class="me-2"  src="images/video.svg" alt="time">123 Video</p>
+                                <p class="sub-text"><img class="me-2" src="images/video.svg" alt="time">123 Video</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Enrolled Students</p>
-                                <p class="sub-text"><img class="me-2"  src="images/balance.svg" alt="time">20,200</p>
+                                <p class="sub-text"><img class="me-2" src="images/balance.svg" alt="time">20,200</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Course Fee</p>
-                                <p class="sub-text"><img class="me-2"  src="images/clock.svg" alt="time">20h 45m</p>
+                                <p class="sub-text"><img class="me-2" src="images/clock.svg" alt="time">20h 45m</p>
                             </div>
                             <div class="btn div-2 flex-grow-1 p-3  border-enroll enroll">
                                 Enroll<i class="fa-solid fa-arrow-right ms-2"></i>
-                            </div>  
+                            </div>
                         </div>
                         <div class="d-flex flex-wrap bg-white p-3 align-items-center gap-3 mb-3 effect">
                             <div class="div-1  flex-grow-1 card-bg rounded">
@@ -241,19 +258,19 @@
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Video Lesson</p>
-                                <p class="sub-text"><img class="me-2"  src="images/video.svg" alt="time">123 Video</p>
+                                <p class="sub-text"><img class="me-2" src="images/video.svg" alt="time">123 Video</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Enrolled Students</p>
-                                <p class="sub-text"><img class="me-2"  src="images/balance.svg" alt="time">20,200</p>
+                                <p class="sub-text"><img class="me-2" src="images/balance.svg" alt="time">20,200</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Course Fee</p>
-                                <p class="sub-text"><img class="me-2"  src="images/clock.svg" alt="time">20h 45m</p>
+                                <p class="sub-text"><img class="me-2" src="images/clock.svg" alt="time">20h 45m</p>
                             </div>
                             <div class="btn div-2 flex-grow-1 p-3  border-enroll enroll">
                                 Enroll<i class="fa-solid fa-arrow-right ms-2"></i>
-                            </div>  
+                            </div>
                         </div>
                         <div class="d-flex flex-wrap bg-white p-3 align-items-center gap-3 mb-3 effect">
                             <div class="div-1  flex-grow-1 card-bg rounded">
@@ -269,23 +286,23 @@
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Video Lesson</p>
-                                <p class="sub-text"><img class="me-2"  src="images/video.svg" alt="time">123 Video</p>
+                                <p class="sub-text"><img class="me-2" src="images/video.svg" alt="time">123 Video</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Enrolled Students</p>
-                                <p class="sub-text"><img class="me-2"  src="images/balance.svg" alt="time">20,200</p>
+                                <p class="sub-text"><img class="me-2" src="images/balance.svg" alt="time">20,200</p>
                             </div>
                             <div class=" div-2 flex-grow-1">
                                 <p class="sub-text div-in-1">Course Fee</p>
-                                <p class="sub-text"><img class="me-2"  src="images/clock.svg" alt="time">20h 45m</p>
+                                <p class="sub-text"><img class="me-2" src="images/clock.svg" alt="time">20h 45m</p>
                             </div>
                             <div class="btn div-2 flex-grow-1 p-3  border-enroll enroll">
                                 Enroll<i class="fa-solid fa-arrow-right ms-2"></i>
-                            </div>  
+                            </div>
                         </div>
-                        
-                       
-                       
+
+
+
                     </div>
 
                 </div>

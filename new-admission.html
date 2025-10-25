@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CePron</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha284-EVSTQN2/azprG1Anm2QDgpJLIm10Nao0Yz1ztcQTwFspd2yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..1000;1,100..1000&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"
+        integrity="…" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+
+<body>
+    <div class="wrapper d-flex">
+        <div class="sidebar bg-light d-flex flex-column p-3  align-item-center justify-content-between side-btnn"
+            id="sidebar">
+            <button id="sidebarToggle" class="btn btn-light "><i class="fa-solid fa-bars"></i></button>
+            <div>
+                <div class="my-4 d-flex flex-row hide-side">
+                    <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                    <span class="px-2 py-1 mt-3 ms-2 text-center bg-white shadow shop">Shop</span>
+                </div>
+
+                <div class="d-flex flex-column gap-2">
+
+                    <a href="index.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side ">
+                            <img class="eff me-2" src="images/dashboard.svg" alt="dash" />
+                            <span class="list-link side-list hide-side">Dashboard</span>
+                        </div>
+                    </a>
+
+
+                    <a href="enrollment.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                            <img src="images/enrollment.svg" alt="enroll" class="me-2" />
+                            <span class="list-link side-list hide-side">Enrollment</span>
+                        </div>
+                    </a>
+
+
+                    <a href="students.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                            <img src="images/student.svg" alt="student" class="me-2" />
+                            <span class="list-link side-list hide-side">Students</span>
+                        </div>
+                    </a>
+
+
+                    <a href="courses.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                            <img src="images/course.svg" alt="course" class="me-2" />
+                            <span class="list-link side-list hide-side">Courses</span>
+                        </div>
+                    </a>
+
+
+                    <a href="balance.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side">
+                            <img src="images/balance.svg" alt="balance" class="me-2" />
+                            <span class="list-link side-list hide-side">Balance</span>
+                        </div>
+                    </a>
+
+
+                    <a href="profile.html" class="text-decoration-none">
+                        <div class="bg-light p-2 border-0 d-flex align-items-center side active">
+                            <img src="images/enrollment.svg" alt="profile" class="me-2" />
+                            <span class="list-link side-list hide-side">Profile</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="">
+                <div class="card bg-light mb-4 profile position-relative">
+                    <div class="card-body">
+                        <img class="avator hide-side" src="images/avator.png" alt="avater" />
+                        <h6 class="card-title fw-bold hide-side">Luna Maria</h6>
+                        <p class="card-text sub-text text-secondary hide-side">
+                            example@gmail.com
+                        </p>
+                    </div>
+                    <div class="position-absolute top-0 end-0 mt-4 me-3 arrow">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="border-top">
+                    <p class="pt-3 sub-text">
+                        <span class="text-secondary">Powered by:</span> CSN Limited
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_content flex-grow-1">
+            <nav class="sticky-top w-100 border-tp">
+                <!-- <div class="d-flex flex-row align-items-center  px-4 py-3 position-relative"> -->
+                <div class="d-flex align-item-center  text-center  left-nav2 px-4 py-4 gap-1 position-relative">
+                    <i class="fa-solid fa-house text-secondary mt-3 ms-1"></i>
+                    <i class="fa-solid fa-angle-right text-secondary mt-3"></i>
+                    <p class="text-secondary pt-2 mt-1">Students</p>
+                    <i class="fa-solid fa-angle-right text-secondary mt-3"></i>
+                    <p class=" pt-2 mt-1">New Admission</p>
+                </div>
+            </nav>
+
+            <div class="body  ">
+                <div class="mx-5 ">
+
+
+                    <div class="row d-flex flex-direction-row my-4">
+                        <div class="col-lg-8 col-md-12 col-sm-12 mb-md-3 mb-sm-3 border-rgt ">
+                            <section class=" text-center text-md-start ">
+                                <div class=" py-3">
+                                    <h4 class="admission">New Admission</h4>
+                                </div>
+                                <div class="container">
+                                    <p class=" mb-2">Course</p>
+
+                                    <div class="dropdown w-100">
+                                        <button class="btn btn-light dropdown-toggle w-100 text-start hvrs"
+                                            type="button" id="courseDropdown" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            <span id="selectedCourse">Advance UI UX Design Course</span>
+                                            <small class="text-muted ms-2" id="selectedInstructor">Jahidul Islam</small>
+
+                                        </button>
+
+                                        <ul class="dropdown-menu w-100 " aria-labelledby="courseDropdown">
+                                            <li><a class="dropdown-item active" href="#"
+                                                    data-course="Advance UI UX Design Course"
+                                                    data-instructor="Jahidul Islam">Advance UI UX Design Course <small
+                                                        class="text-muted">Jahidul Islam</small>
+                                                    <i class="fa-solid fa-check hide-icon"></i>
+                                                </a></li>
+                                            <li><a class="dropdown-item" href="#"
+                                                    data-course="Advance UI UX Design Course 2"
+                                                    data-instructor="Jahidul Islam 2">Advance UI UX Design Course 2
+                                                    <small class="text-muted">Jahidul Islam 2</small><i
+                                                        class="fa-solid fa-check hide-icon"></i></a></li>
+                                            <li><a class="dropdown-item" href="#"
+                                                    data-course="Advance UI UX Design Course 3"
+                                                    data-instructor="Jahidul Islam 3">Advance UI UX Design Course 3
+                                                    <small class="text-muted">Jahidul Islam 3</small> <i
+                                                        class="fa-solid fa-check hide-icon"></i></a></li>
+                                            <li><a class="dropdown-item" href="#"
+                                                    data-course="Advance UI UX Design Course 4"
+                                                    data-instructor="Jahidul Islam 4">Advance UI UX Design Course 4
+                                                    <small class="text-muted">Jahidul Islam 4</small><i
+                                                        class="fa-solid fa-check hide-icon "></i></a></li>
+                                            <li><a class="dropdown-item" href="#"
+                                                    data-course="Advance UI UX Design Course 5"
+                                                    data-instructor="Jahidul Islam 5">Advance UI UX Design Course 5
+                                                    <small class="text-muted">Jahidul Islam 5</small><i
+                                                        class="fa-solid fa-check hide-icon "></i></a></li>
+                                            <li><a class="dropdown-item" href="#"
+                                                    data-course="Advance UI UX Design Course 6"
+                                                    data-instructor="Jahidul Islam 6">Advance UI UX Design Course 6
+                                                    <small class="text-muted">Jahidul Islam 6</small><i
+                                                        class="fa-solid fa-check hide-icon"></i></a></li>
+                                            <li><a class="dropdown-item" href="#"
+                                                    data-course="Advance UI UX Design Course 7"
+                                                    data-instructor="Jahidul Islam 7">Advance UI UX Design Course 7
+                                                    <small class="text-muted">Jahidul Islam 7</small><i
+                                                        class="fa-solid fa-check hide-icon "></i></a></li>
+                                            <li><a class="dropdown-item" href="#"
+                                                    data-course="Advance UI UX Design Course 8"
+                                                    data-instructor="Jahidul Islam 8">Advance UI UX Design Course 8
+                                                    <small class="text-muted">Jahidul Islam 8</small><i
+                                                        class="fa-solid fa-check hide-icon "></i></a></li>
+                                            <li><a class="dropdown-item" href="#"
+                                                    data-course="Advance UI UX Design Course 9"
+                                                    data-instructor="Jahidul Islam 9">Advance UI UX Design Course 9
+                                                    <small class="text-muted">Jahidul Islam 9</small><i
+                                                        class="fa-solid fa-check hide-icon "></i></a></li>
+                                            <li><a class="dropdown-item" href="#"
+                                                    data-course="Advance UI UX Design Course 10"
+                                                    data-instructor="Jahidul Islam 10">Advance UI UX Design Course 10
+                                                    <small class="text-muted">Jahidul Islam 10</small><i
+                                                        class="fa-solid fa-check hide-icon "></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <p class="py-2">Students</p>
+                                    <a href="#" class="text-decoration-none border-every px-3 py-2 text-dark "><i
+                                            class="fa-solid fa-plus"></i>New</a>
+                                </div>
+
+                                <div class="border-every p-3 ">
+                                    <div class="py-3  p-tab background text-center text-danger mb-2">No students
+                                        selected
+                                    </div>
+
+                                    <div
+                                        class="d-flex flex-wrap px-3 py-1 align-items-center gap-2  p-tab justify-content-between bg-light mb-2">
+                                        <div class="  flex-grow-1 div-1 ">
+                                            <div class="d-flex gap-2 align-items-center ">
+                                                <img class="male" src="images/GenderMale.png" alt="gender">
+                                                <div class="">
+                                                    <p class="name mt-1 mb-1">Mohammad Mahfuz</p>
+                                                    <div class="d-flex gap-2  text-secondary sub-text">
+                                                        <p class="">Male</p>
+                                                        <p>#056976</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="div-2-admission flex-grow-1">
+                                            <p class="sub-text div-in-1">+12517918588</p>
+                                        </div>
+                                        <div class=" div-2-admission flex-grow-1">
+                                            <p class="sub-text div-in-1">
+                                                VAxzaRmYbIPcUY8L</p>
+                                        </div>
+                                        <div class="  ">
+                                            <p class="sub-text div-in-1"><img src="images/trash.svg" alt=""></p>
+                                        </div>
+
+
+                                    </div>
+                                    <div
+                                        class="d-flex flex-wrap px-3 py-1 align-items-center gap-2  p-tab justify-content-between bg-light">
+                                        <div class="  flex-grow-1 div-1 ">
+                                            <div class="d-flex gap-2 align-items-center ">
+                                                <img class="male" src="images/GenderMale.png" alt="gender">
+                                                <div class="">
+                                                    <p class="name mt-1 mb-1">Mohammad Mahfuz</p>
+                                                    <div class="d-flex gap-2  text-secondary sub-text">
+                                                        <p class="">Male</p>
+                                                        <p>#056976</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="div-2-admission flex-grow-1">
+                                            <p class="sub-text div-in-1">+12517918588</p>
+                                        </div>
+                                        <div class=" div-2-admission flex-grow-1">
+                                            <p class="sub-text div-in-1">
+                                                VAxzaRmYbIPcUY8L</p>
+                                        </div>
+                                        <div class="  ">
+                                            <p class="sub-text div-in-1"><img src="images/trash.svg" alt=""></p>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="my-3  text-center align-items-center">
+                                        <a href="#"><i class="fa-solid fa-link"></i>Add Students</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="py-3">
+                                <p class="fs-5">Order Summary</p>
+                                <div class="bg-light p-3 border-every">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-secondary title-txt">Course Fees</p>
+                                        <p class="text-secondary title-txt">€ 200</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between border-btm mb-2">
+                                        <p class="text-secondary title-txt">Students (Qty)</p>
+                                        <p class="text-secondary title-txt">0</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between ">
+                                        <p class="text-secondary title-txt">Subtotal</p>
+                                        <p class="text-secondary title-txt">€ 200</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between border-btm mb-2">
+                                        <p class="text-secondary title-txt">VAT (5%)</p>
+                                        <p class="text-secondary title-txt">€ 20</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="text-secondary fw-bold title-txt">Net Total</p>
+                                        <p class="text-secondary fw-bold title-txt">€ 210</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="py-3">
+                                <p>Coupon</p>
+                                <div class="d-flex flex-grow-1 gap-3 ">
+                                    <div class="search-ad-container position-relative  input hvr">
+                                        <input type="text" class="p-3 input bg-light ad-input "
+                                            placeholder="Enter Coupon code" />
+                                        <span class="tag position-absolute"><img src="images/tag.svg" alt="tag"
+                                                class=" tag"></span>
+                                    </div>
+                                    <div class="ad-stu-btn  text-center p-3 hvr">
+                                        Apply
+                                    </div>
+                                </div>
+                            </div>
+                             <div>
+                                <p class="fs-5">Payment Method</p>
+                                <div class="d-flex justify-content-between ">
+                                    <div class="payment-option d-flex flex-column border-every px-4 pt-4 active">
+                                        <i class="fa-regular fa-circle text-secondary "></i>
+                                        <p class="d-inline-block ">Bank Pay</p>
+                                    </div>
+                                    <div class="payment-option d-flex flex-column border-every px-4 pt-4">
+                                        <i class="fa-regular fa-circle text-secondary"></i>
+                                        <p class="d-inline-block">Online Pay</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="border-every pay p-3 mt-4 text-center">
+                                Pay Online
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="index.js"></script>
+</body>
+
+</html>

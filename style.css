@@ -26,13 +26,48 @@
   border-bottom: 1px solid #F1F5F9;
   
 }
+.border-btm{
+  border-bottom: 1px solid #E2E8F0;
+  
+}
+.tag{
+  top: 10px;
+  left: 10px;
+ 
+}
+.ad-input::placeholder{
+  color:#94A3B8 ;
+  font-size: 14px;
+}
+
+
+.payment-option {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.payment-option.active {
+    border: 1px solid #2DD4BF;
+    background-color: #F0FDFA; 
+}
+
+.pay{
+  background-color: #E2E8F2;
+  color: white;
+}
+
 /* -------table border redius---------- */
 .tab{
   border-radius: 12px;
 }
+.p-tab{
+  border: 1px solid #F1F5F9;
+  border-radius: 8px;
+}
 .border-rgt{
   border-right: 1px solid #F1F5F9;
 }
+
 /* -------------sidebar------------ */
 .sidebar {
   min-width: 280px;
@@ -49,7 +84,7 @@
 }
 
 .shop {
-  border-radius: 0.8rem;
+  border-radius: 12px;
 }
 
 .side-list {
@@ -61,7 +96,7 @@
 a:hover {
   background-color: #E2E8F0 !important;
   color: #1E293B !important;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .profile {
@@ -80,7 +115,7 @@ a:hover {
 
 .profile:hover {
   border: 1px solid #E2E8F0;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .profile:hover .arrow {
@@ -88,8 +123,9 @@ a:hover {
 }
 
 .side.active {
-  background-color: #2DD4BF !important;
-  border-radius: 10px;
+  background-color: black !important;
+  border-radius: 12px;
+  
 }
 
 /* .side a.side:hover {
@@ -124,28 +160,28 @@ nav {
 /* ------------card------- */
 .card-1 {
   background-color: #FDF2F8;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 .card-2 {
   background-color: #DBEAFE;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 .card-3 {
   background-color: #FEF9C3;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 .card-4 {
   background-color: #DCFCE7;
-  border-radius: 14px;
+  border-radius: 12px;
 }
 
 /* --------chart------ */
 .drop {
   border: 1px solid #e9ecef;
-  border-radius: 10px;
+  border-radius: 12px;
   background-color: #FFFFFF;
 }
 
@@ -165,18 +201,21 @@ td {
   text-align: left;
   padding: 15px;
   font-size: 16px;
+  
 }
 
 th {
   color: #475569;
   font-weight: 600;
+  
 }
+
 
 .rank {
   display: inline-block;
   width: 30px;
   height: 30px;
-  border-radius: 10px;
+  border-radius: 12px;
   color: white;
   text-align: center;
   line-height: 30px;
@@ -198,12 +237,34 @@ th {
 .default {
   background-color: #64748b;
 }
+.course-img{
+  width: 100px;
+  height: 80px;
+  object-fit: cover;
+}
 
+     .course-title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;}
+  
+    .course-icon{
+      width: 16px;
+      height: 16px;
+      object-fit: cover;
+    }
 /* --balance-------- */
 .apexcharts-toolbar {
   display: none !important;
 }
-
+.card-bdr{
+  border: 2px solid #f1f5f9;
+  border-radius: 12px;
+}
+.shadow-btm{
+   box-shadow: 0 1px 1px 1px #f1f5f9;
+}
 
 /* --------------------------------------profile------------------ */
 
@@ -212,7 +273,7 @@ th {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .profile-img {
@@ -237,14 +298,24 @@ th {
 .target {
   opacity: 0;
 }
-
-
+.title-txt{
+  font-size: 14px;
+  line-height: 20px;
+}
+.teal{
+  color: #2DD4BF;
+}
 /* ----------------------enrollment----------------- */
 .search-container input {
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border-radius: 12px;
   min-width: 200px;
 }
+
+.search-container input:focus {
+  outline: 1px solid #2DD4BF;
+}
+
 
 .search-container .icon {
   right: 10px;
@@ -257,7 +328,7 @@ th {
 .filter-btn,
 .export-btn {
   border: 1px solid #e0e0e0;
-  border-radius: 8px;
+  border-radius: 12px;
   cursor: pointer;
   font-size: 14px;
   max-width: 120px;
@@ -266,12 +337,16 @@ th {
 .export-btn {
   background-color: #2d8cff;
   color: white;
-  border: none;
+  /* border: 1px solid #2d8cff;
+  border-radius: 12px; */
+}
+.export-btn:focus {
+  outline: none;
 }
 
 .sort-dropdown,
 .date-picker {
-  border-radius: 8px;
+  border-radius: 12px;
   border: 1px solid #e0e0e0;
   font-size: 14px;
   outline: none;
@@ -325,6 +400,9 @@ th {
 .div-2 {
   min-width: 145px;
 }
+.div-2-admission {
+  min-width: 125px;
+}
 
 .div-in-1 {
   width: 100%;
@@ -358,9 +436,9 @@ th {
   border-radius: 8px;
 }
 
-.hvr:hover {
-  border: 1px solid #2DD4BF;
-  border-radius: 8px;
+.hvr:focus{
+  outline: 1px solid #2DD4BF;
+  border-radius: 12px;
 }
 
 .card-bg {
@@ -395,6 +473,66 @@ th {
   background-color: #FEE2E2 !important;
 
 }
+/* ------------admission------------- */
+.admission{
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 600 ;
+
+}
+.background{
+  background-color:#FEF2F2;
+}
+
+   /* .hide-icon{
+  display: none;
+} */
+
+    .dropdown-item.active {
+     background-color:white;
+     color: black;
+      font-weight: 600;
+    }
+    .dropdown-item .hide-icon {
+  display: none;
+}
+
+.dropdown-item.active .hide-icon {
+  display: block;
+}
+
+.hvrs {
+  border: 1px solid #f8f9fa;
+  border-radius: 8px;
+}
+
+.hvrs:focus{
+  outline: 1px solid #2DD4BF !important;
+  border-radius: 8px;
+}
+.search-ad-container input {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  min-width: 100px;
+}
+.ad-stu-btn {
+  border: 1px solid #2DD4BF;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  min-width: 70px;
+  color: #2DD4BF;
+}
+
+.search-ad-container .tag {
+  right: 10px;
+  top: 70%;
+  transform: translateY(-50%);
+}
+.ad-input{
+  padding-left: 33px !important;
+}
+
 /* ---------------responsive sidebar------------ */
 
 #sidebarToggle{
@@ -409,6 +547,14 @@ th {
       display: none;
     }
 /* ----------------media-------------- */
+
+@media(max-width: 1200px){
+  .course-title {
+   
+    width: 80%;
+  }
+}
+
 @media (max-width: 992px) {
   .sidebar {
     min-width: 70px;
@@ -421,8 +567,12 @@ th {
   .arrow {
     display: block;
   }
+  .course-title {
+   
+    width: 65%;
+  }
+  
 }
-
 @media (max-width: 768px) {
   
   .hide-side{
@@ -460,9 +610,34 @@ th {
      nav {
     width: 100%;
   }
+  .course-title {
+   
+    width: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .course-title {
+   
+    width: 120px 
+  }
 }
 
+@media (min-width: 1400px) {
+  .course-title {
+    width: 180px ;
+  }
+}
 
+@media (min-width: 1550px) {
+  .course-title {
+   
+    width: 100%;
+  }
+}
 
-
-
+.side.active img{
+  filter: brightness(0) invert(1);
+}
+.side.active span{
+  color: #ffffff;
+}

@@ -107,10 +107,12 @@
                         <p class="mt-2 fs-5">Enrollment</p>
                     </div>
                     <div class="m-2 nav-right">
-                        <div class="d-flex flex-row align-items-center mx-3 my-1">
+                        <a href="new-admission.html " class="text-decoration-none text-white">
+                            <div class="d-flex align-items-center mx-3 my-1">
                             <img src="images/new_admission.svg" alt="addmission">
                             <p class="my-2">New Admission</p>
                         </div>
+                        </a>
                     </div>
                 </div>
             </nav>
@@ -119,18 +121,18 @@
                 <div class="mx-5  mt-4">
                     <div class="top-section d-flex flex-wrap align-items-center justify-content-between gap-3">
                         <div class="d-flex flex-grow-1 gap-3 ">
-                            <div class="search-container position-relative  input hvr">
-                                <input type="text" class="p-3 input" placeholder="Search Student" />
+                            <div class="search-container position-relative  input hvr border-every ">
+                                <input type="text" class="p-3 input bg-light" placeholder="Search Student" />
                                 <span class="icon position-absolute"><i class="fa-solid fa-magnifying-glass"></i></span>
                             </div>
 
-                            <div class="filter-btn p-3 fltr-icon text-center hvr">
-                                <span class="icon "><i class="fa-solid fa-filter"></i></span> Filter
+                            <div class="filter-btn p-3 fltr-icon text-center ">
+                                <span class="icon border-every bg-white"><i class="fa-solid fa-filter"></i></span> Filter
                             </div>
                         </div>
 
                         <div class="flex-grow-1 hvr">
-                            <select class="sort-dropdown p-3 ">
+                            <select class="sort-dropdown p-3 bg-white ">
                                 <option selected>Sort by</option>
                                 <option>Pending</option>
                                 <option>Confirmed</option>
@@ -139,12 +141,18 @@
                             </select>
                         </div>
 
-                        <div class="flex-grow-1 hvr">
-                            <input type="date" class="date-picker p-3 text-secondary date" />
+                        <div class="flex-grow-1 ">
+                            <input type="date" class="date-picker border-every p-3 text-secondary date bg-light hvr" />
                         </div>
 
-                        <div class="export-btn  text-center p-3 hvr">
-                            Export to <i class="fa-solid fa-angle-down"></i>
+                        <div class="">
+                            <select class=" export-btn  p-3 ">
+                                <option selected>Export to</option>
+                                <option>Pending</option>
+                                <option>Confirmed</option>
+                                <option>Cancelled</option>
+
+                            </select>
                         </div>
                     </div>
                     <div class="enrollment-table mt-4 table-responsive-md">

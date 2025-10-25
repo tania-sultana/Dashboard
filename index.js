@@ -81,7 +81,27 @@ window.addEventListener('click', function (event) {
 // });
 
 
+// ----new-admission dropdown----
+document.querySelectorAll('.dropdown-item').forEach(item => {
+      item.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelectorAll('.dropdown-item').forEach(el => el.classList.remove('active'));
+
+        this.classList.add('active');
+
+        document.getElementById('selectedCourse').textContent = this.dataset.course;
+        document.getElementById('selectedInstructor').textContent = this.dataset.instructor;
+      });
+    });
 
 
+// ------------new admission payment-
 
-
+    const paymentOptions = document.querySelectorAll('.payment-option');
+paymentOptions.forEach(option => {
+    option.addEventListener('click', () => {
+        paymentOptions.forEach(opt => opt.classList.remove('active')); 
+        option.classList.add('active'); 
+    });
+});
